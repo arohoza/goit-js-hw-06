@@ -3,24 +3,10 @@ const output = document.querySelector("#name-output");
 console.log(textInput);
 console.log(output.textContent);
 
-
-
-
 textInput.addEventListener("input", (event) => {
-     if (textInput.value == '') {
-         output.textContent ="Anonymous";  
-     }
-     else {
-          output.textContent = event.currentTarget.value;
-          // console.log(output.textContent)
-          
-    }
+  if (textInput.value == "") {
+    output.textContent = "Anonymous";
+  } else {
+    output.textContent = event.currentTarget.value;
+  }
 });
- 
-
-// textInput.addEventListener("input", (event) => {
-//      output.textContent = event.currentTarget.value;
-    
-// });
-
- 
